@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Getron Push</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="picker_today">Today</string>
+    <string name="picker_am">AM</string>
+    <string name="picker_pm">PM</string>
+</resources>

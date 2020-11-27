@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="90"
+            android:orientation="vertical"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dialog_edge"
+                android:weightSum="100.5"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:text="Select the number of cells \n to show on one line"
+                    android:textColor="#2c2c2c"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="2 Cells"
+                    android:textColor="#707070"
+                    android:background="@android:color/transparent"
+                    android:textAllCaps="false"
+                    android:id="@+id/btn_grid_select_dialog02"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ededed"></LinearLayout>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:textColor="#707070"
+                    android:text="3 Cells"
+                    android:background="@android:color/transparent"
+                    android:textAllCaps="false"
+                    android:id="@+id/btn_grid_select_dialog03"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ededed"></LinearLayout>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:textColor="#707070"
+                    android:text="4 Cells"
+                    android:background="@android:color/transparent"
+                    android:textAllCaps="false"
+                    android:id="@+id/btn_grid_select_dialog04"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ededed"></LinearLayout>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:textColor="#707070"
+                    android:text="5 Cells"
+                    android:background="@android:color/transparent"
+                    android:textAllCaps="false"
+                    android:id="@+id/btn_grid_select_dialog05"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

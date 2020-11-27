@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "882964330316",
+    "firebase_url": "https://getronsystem-39de0.firebaseio.com",
+    "project_id": "getronsystem-39de0",
+    "storage_bucket": "getronsystem-39de0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:882964330316:android:4035980181dae691",
+        "android_client_info": {
+          "package_name": "gtron.com.gtronsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "882964330316-sln72jri8g1qrkk03trgsejhsia6f47p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "gtron.com.gtronsystem",
+            "certificate_hash": "c4590e5d61aa476a24c3d7935e819cf917726727"
+          }
+        },
+        {
+          "client_id": "882964330316-oroueh877pem04gepdvug6l81o4fremo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJ6gbtGANCB05OZ9JxTvSvM-GoEwlbXfo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "882964330316-oroueh877pem04gepdvug6l81o4fremo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

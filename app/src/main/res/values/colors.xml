@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#25476a</color>
+    <color name="colorPrimaryDark">#25476a</color>
+    <color name="colorAccent">#0572BB</color>
+    <color name="colorBottomLine">#0572BB</color>
+
+    <color name="buttonColorOn">#25476a</color>
+    <color name="buttonColorOff">#cccccc</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="picker_background">#3F51B5</color>
+    <color name="picker_button_background_selected">#3F51B5</color>
+    <color name="picker_button_background">@android:color/white</color>
+    <color name="picker_button_background_innactive">#BDBDBD</color>
+    <color name="picker_default_text_color">#999999</color>
+    <color name="picker_default_selected_text_color">@android:color/black</color>
+    <color name="picker_default_selector_color">#646464</color>
+</resources>

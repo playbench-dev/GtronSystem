@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="gtron.com.gtronsystem"
+    android:targetSandboxVersion="1">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.VIBLATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:name=".Application"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_gtron_logo"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_gtron_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Activity.TestActivity"></activity>
+        <activity
+            android:name=".Activity.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.PopupActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="test11"
+                    android:scheme="test" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.SettingActivity"
+            android:screenOrientation="portrait" /> <!-- [START firebase_service] -->
+
+        <service android:name=".Utils.NotifiTest"
+            android:label="My Notification Listener"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".FirebaseService.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service> <!-- [END firebase_service] -->
+
+        <receiver android:name=".Utils.AlarmReceiver">
+            <intent-filter>
+                <action android:name="com.test.alarmtestous.ALARM_START" />
+            </intent-filter>
+        </receiver> <!-- [END firebase_iid_service] -->
+
+        <receiver android:name=".Utils.BroadcastVib">
+            <intent-filter>
+                <action android:name="com.gtron_vib"></action>
+            </intent-filter>
+        </receiver>
+        <service android:name=".Utils.AlarmService"
+            android:enabled="true"/>
+
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".Activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.SelectViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.MessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.InsertPhoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.CheckNumberActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.MessageDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.TileViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".Activity.ChangePwActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.SelectTileViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ChangeInsertPhoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.PushMainActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/drawer"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:orientation="vertical"
+        android:fitsSystemWindows="true"
+        android:weightSum="100"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/img_logo" />
+
+        <TextView
+            android:id="@+id/nav_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textColor="#6d6e71"
+            android:textStyle="bold"
+            android:text="이수진"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="4dp"></LinearLayout>
+        <TextView
+            android:id="@+id/nav_email"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#6d6e71"
+            android:text="1111@naver.com" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="12dp"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+
+            android:weightSum="100"
+            android:id="@+id/linear_tile_monitor">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"></LinearLayout>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:src="@drawable/ic_monitor"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"></LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="70"
+                android:gravity="center_vertical"
+                android:text="View Monitoring"
+                android:textColor="#6d6e71"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/img_tile_side_monitoring_arrow"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:src="@drawable/ic_down_arrow"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:id="@+id/linear_side_monitoring_child_visible"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="100">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"></LinearLayout>
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:src="@drawable/ic_monitor"
+                    android:visibility="invisible"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="80"
+                    android:weightSum="100"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:textSize="16dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#6d6e71"
+                        android:text="Process Type"
+                        android:id="@+id/txt_side_monitoring_child_process"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="16dp"
+                        android:textColor="#6d6e71"
+                        android:text="Tile Type"
+                        android:id="@+id/txt_side_monitoring_child_tile"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"></LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:weightSum="100"
+            android:id="@+id/linear_tile_select">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"></LinearLayout>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:src="@drawable/ic_select"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"></LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="70"
+                android:gravity="center_vertical"
+                android:text="Select View"
+                android:textColor="#6d6e71"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/img_tile_side_select_view_arrow"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:src="@drawable/ic_down_arrow"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:id="@+id/linear_side_select_view_child_visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="100">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"></LinearLayout>
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:src="@drawable/ic_monitor"
+                    android:visibility="invisible"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="80"
+                    android:weightSum="100"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:textSize="16dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#6d6e71"
+                        android:text="Process Type"
+                        android:id="@+id/txt_side_select_view_child_process"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="16dp"
+                        android:textColor="#6d6e71"
+                        android:text="Tile Type"
+                        android:id="@+id/txt_side_select_view_child_tile"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"></LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+
+            android:id="@+id/linear_tile_message"
+            android:weightSum="100">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"></LinearLayout>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:src="@drawable/ic_message"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="73">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="Message"
+                    android:textColor="#6d6e71"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_height="match_parent" />
+
+                <FrameLayout
+                    android:id="@+id/frame_tile_view_left_badge"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/img_badge_background"/>
+                    <TextView
+                        android:id="@+id/txt_tile_view_left_badge"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="#ffffff"
+                        android:gravity="center"
+                        android:text="1"/>
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:weightSum="100"
+            android:orientation="vertical"
+            android:id="@+id/linear_side_message_child_visible"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textSize="16dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#6d6e71"
+                android:text="-Receive"
+                android:id="@+id/txt_side_message_child_receive"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="5dp"
+                android:textSize="16dp"
+                android:textColor="#6d6e71"
+                android:text="-Send"
+                android:id="@+id/txt_side_message_child_send"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"></LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+
+            android:id="@+id/linear_tile_setting"
+            android:weightSum="100">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"></LinearLayout>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:src="@drawable/ic_setting"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"></LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="81"
+                android:gravity="center_vertical"
+                android:text="Settings"
+                android:textColor="#6d6e71"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"></LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+
+            android:id="@+id/linear_tile_logout"
+            android:weightSum="100">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"></LinearLayout>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:src="@drawable/ic_logout"
+                android:scaleY="0.7"
+                android:scaleX="0.8"
+                android:scaleType="fitCenter"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"></LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="81"
+                android:gravity="center_vertical"
+                android:text="Logout"
+                android:textColor="#6d6e71"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
